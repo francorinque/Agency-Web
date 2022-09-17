@@ -277,8 +277,142 @@ body{
     position: absolute;
     width: 456px;
     height: 360px;
-    left:  -50px;
+    left: 50%;
     top:  50%;
-    transform: translateY(-50%);
+    transform: translate(-70%,-50%);
+  }
+}
+/***** services *****/
+
+.services
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__info
+{
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.services__cards
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.services__card
+{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.services__card h3 
+{
+  font-size: 1.5rem;
+}
+
+.services__card p
+{
+  color: var(--gris);
+  font-size: 14px;
+}
+
+.services__title h2
+{
+  font-weight: var(--bold);
+  font-size: var(--font-size);
+}
+
+.line
+{
+  height: 5px;
+  width: 40px;
+  background-color: var(--gris);
+  display: block;
+}
+
+
+.services__picture 
+{
+  background-color: var(--white);
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.services__picture  img 
+{
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 500px){
+  .services__cards
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .services__card
+  {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .services__picture  img  
+  {
+    position: absolute;
+    object-fit: cover;
+    width: 456px;
+    height: 360px;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+
+
+@media screen and (min-width: 780px){
+
+  .services
+  {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .services__info,
+  .services__picture 
+  {
+    height: 600px;
+  }
+
+  .services__picture img 
+  {
+   transform: translate(-70%,-50%);
+  }
+
+
+  .services__card
+  {
+    width:40%;
   }
 }
