@@ -2,105 +2,51 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <title>Document</title>
 </head>
 <body>
 
-<header class="container hero">
-  <nav class="nav">
-    <div class="nav__logo">YourLogo</div>
 
-    <div class="nav__social">
-      <a href="#"><span class="iconify" data-icon="simple-line-icons:social-twitter"></span></a>
-      <a href="#"><span class="iconify" data-icon="simple-line-icons:social-instagram"></span></a>
-      <a href="#"><span class="iconify" data-icon="simple-line-icons:social-linkedin"></span></a>
+  <nav class="navbar">
+    <div class="navbar__logo">LOGO</div>
+
+    <div class="navbar__menu">
+      <a href="#hero">Home</a>
+      <a href="#">link 2</a>
+      <a href="#">link 3</a>
+      <a href="#">link 4</a>
     </div>
+
+    <!-- toggle -->
+    <button class="toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
   </nav>
-  <!-- texto-->
-  <div class="hero__texto">
-    <span class="small-text">Lorem, ipsum.</span>
-    <h1 class="hero__title">Lorem, ipsum dolor.</h1>
-    <p class="hero__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis harum laborum quod.</p>
-    <button class="btn btn-hero">LINK</button>
+
+<header class="container hero" id="hero">
+
+  <div class="hero__description">
+    <p class="small-text">Hello</p>
+    <h1 class="hero__title">I'm Name</h1>
+    <p class="hero__p">Freelance web Designer & Developer</p>
   </div>
-  <!-- picture -->
-  <figure class="hero__picture">
-    <img src="images/hero-woman.jpg" alt="">
-  </figure>
+  <!-- foto -->
+  <div class="hero__picture">
+  </div>
 </header>
 
-<main>
-  <section class="container about">
-    <!-- content -->
-    <div class="about__content">
-      <span class="small-text">Who we are</span>
-      <h2>Lorem, ipsum.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatibus distinctio veniam quo nemo aut in qui tenetur inventore magni similique, error dolore pariatur recusandae architecto commodi et sed. Dolor!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatibus distinctio veniam quo nemo aut in qui tenetur inventore magni similique, error dolore pariatur recusandae architecto commodi et sed. Dolor!</p>
-    </div>
-    <!-- picture -->
-    <div class="about__picture">
-      <img src="./images/services.jpg" alt="">
-    </div>
-  </section>
-
-  <section class="container services">
-    <div class="services__info">
-      <div class="services__title">
-        <span class="small-text">What we do</span>
-        <h2>Our Services</h2>
-      </div>
-      <!-- cards -->
-      <div class="services__cards">
-        <!-- 1 -->
-        <div class="services__card">
-            <span class="line"></span>
-            <h3>Lorem, ipsum.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quibusdam!</p>
-        </div>
-        <!-- 2 -->
-        <div class="services__card">
-          <span class="line"></span>
-          <h3>Lorem, ipsum.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quibusdam!</p>
-      </div>
-        <!-- 3 -->
-        <div class="services__card">
-          <span class="line"></span>
-          <h3>Lorem, ipsum.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quibusdam!</p>
-      </div>
-        <!-- 4 -->
-        <div class="services__card">
-          <span class="line"></span>
-          <h3>Lorem, ipsum.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quibusdam!</p>
-      </div>
-      </div>
-    </div>
-    <!-- img -->
-    <div class="services__picture">
-      <img src="images/laptop.jpg" alt="laptop">
-    </div>
-  </section>
-</main>
 
 
 
 
 
 
+<!-- js -->
+<script src="./js/main.js" type="module"></script>
 
 
-
-
-
-
-
-
-<script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script> 
 </body>
 </html>
