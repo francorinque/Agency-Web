@@ -1,7 +1,7 @@
 const d = document;
 
 
-export default function menuToggle(btn,menu){
+export  function menuToggle(btn,menu){
     // traigo al elemento
     const $toggle = d.querySelector(btn),
     $menu = d.querySelector(menu);
@@ -12,5 +12,16 @@ export default function menuToggle(btn,menu){
             // añado la clase al menu
             $menu.classList.toggle("showMenu")
         }
+    })
+}
+
+
+export  function scrollNav(nav,clase){
+    const $nav = d.getElementById(nav)
+    window.addEventListener("scroll",function(e){
+        let scroll = window.scrollY;
+        scroll > 0 
+        ? $nav.classList.add(clase)
+        : $nav.classList.remove(clase)
     })
 }
