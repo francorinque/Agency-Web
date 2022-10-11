@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <title>Document</title>
@@ -87,6 +91,113 @@
       <!-- fin de card 3 -->
     </div>
   </section>
+  <!--?comentarios  -->
+  <section class="container comentarios">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- 1 -->
+          <article class="swiper-slide">
+            <div class="swiper__stars">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <div class="swiper__user">
+              <h3>Alan Taboada</h3>
+              <p>Lorem, ipsum.</p>
+              <div class="user__photo"></div>
+            </div>
+          </article>
+          <!-- 2 -->
+          <article class="swiper-slide">
+            <div class="swiper__stars">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <div class="swiper__user">
+              <h3>Maravillas Herranz</h3>
+              <p>Lorem, ipsum.</p>
+              <div class="user__photo"></div>
+            </div>
+          </article>
+          <!-- 3 -->
+          <article class="swiper-slide">
+            <div class="swiper__stars">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <div class="swiper__user">
+              <h3>Raul Arroyo</h3>
+              <p>Lorem, ipsum.</p>
+              <div class="user__photo"></div>
+            </div>
+          </article>
+          <!-- 4 -->
+          <article class="swiper-slide">
+            <div class="swiper__stars">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <div class="swiper__user">
+              <h3>Jamila Franco</h3>
+              <p>Lorem, ipsum.</p>
+              <div class="user__photo"></div>
+            </div>
+          </article>
+          <!-- 5 -->
+          <article class="swiper-slide">
+            <div class="swiper__stars">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <div class="swiper__user">
+              <h3>Max Huertas</h3>
+              <p>Lorem, ipsum.</p>
+              <div class="user__photo"></div>
+            </div>
+          </article>
+          <!-- 6 -->
+          <article class="swiper-slide">
+            <div class="swiper__stars">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+              <img src="images/star.svg" alt="star">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <div class="swiper__user">
+              <h3>Francisco Oliveira</h3>
+              <p>Lorem, ipsum.</p>
+              <div class="user__photo"></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+  </section>
 </main>
 
 
@@ -95,6 +206,30 @@
 
 
 
+
+<!-- js swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+    }, 
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+  }
+});
+</script>
 
 
 <!-- js -->

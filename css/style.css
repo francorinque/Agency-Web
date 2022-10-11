@@ -349,3 +349,55 @@ body
     transition: var(--transition);
   }
 }
+/*? comentarios */
+.comentarios{
+  padding: 100px 0;
+  background-color: var(--violet);
+}
+
+.swiper{
+  padding: 0 10px;
+  height: 300px;
+}
+
+.swiper-slide{
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--violet);
+}
+
+.user__photo{
+  --size: 70px;
+  width: var(--size);
+  height: var(--size);
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.swiper-slide h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.swiper-slide > p{
+  line-height: 1.1;
+}
+
+.swiper__user p{
+  font-size: 14px;
+  letter-spacing: 2px;
+}

@@ -17,11 +17,15 @@ export  function menuToggle(btn,menu){
 
 
 export  function scrollNav(nav,clase){
+    // traigo el elemento
     const $nav = d.getElementById(nav)
     window.addEventListener("scroll",function(e){
+        // guardo el scrollY en variable
         let scroll = window.scrollY;
+        // si el scroll es mayor a 0, agrega una clase al navbar
         scroll > 0 
         ? $nav.classList.add(clase)
+        // si es menor a 0, le quita la clase 
         : $nav.classList.remove(clase)
     })
 }
