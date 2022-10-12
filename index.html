@@ -19,8 +19,8 @@
 
     <div class="navbar__menu">
       <a href="#hero">Home</a>
-      <a href="#">link 2</a>
-      <a href="#">link 3</a>
+      <a href="#services">Services</a>
+      <a href="#opinions">Opinions</a>
       <a href="#">link 4</a>
     </div>
 
@@ -43,7 +43,7 @@
 </header>
 
 <main>
-  <section class="container services">
+  <section class="container services" id="services">
     <!-- ?services title -->
     <div class="services__title">
       <h2>Mis Servicios</h2>
@@ -92,7 +92,10 @@
     </div>
   </section>
   <!--?comentarios  -->
-  <section class="container comentarios">
+  <section class="container comentarios" id="opinions">
+    <!-- ?title -->
+    <div class="comentarios__title">Opiniones</div>
+    <!-- ?swiper -->
     <div class="swiper">
         <div class="swiper-wrapper">
           <!-- 1 -->
@@ -120,7 +123,7 @@
               <img src="images/star.svg" alt="star">
               <img src="images/star.svg" alt="star">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi</p>
             <div class="swiper__user">
               <h3>Maravillas Herranz</h3>
               <p>Lorem, ipsum.</p>
@@ -136,7 +139,7 @@
               <img src="images/star.svg" alt="star">
               <img src="images/star.svg" alt="star">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum adipisci aut magni iure similique fuga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet laudantium nemo earum uga, sit odit, dolor id tenetur pariatur perspiciatis sequi quis saepe placeat?</p>
             <div class="swiper__user">
               <h3>Raul Arroyo</h3>
               <p>Lorem, ipsum.</p>
@@ -195,7 +198,7 @@
 
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
     </div>
   </section>
 </main>
@@ -212,9 +215,7 @@
 <script>
   const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  spaceBetween: 20,
   navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -223,14 +224,17 @@
     600: {
       slidesPerView: 2,
     }, 
-    768: {
+    820: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    992:{
       slidesPerView: 3,
       spaceBetween: 20,
     }
   }
 });
 </script>
-
 
 <!-- js -->
 <script src="./js/main.js" type="module"></script>
